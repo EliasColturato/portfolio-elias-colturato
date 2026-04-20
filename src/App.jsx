@@ -1,5 +1,7 @@
 import { useEffect, useRef } from 'react'
 
+const assetBase = `${import.meta.env.BASE_URL}assets/`
+
 const experiences = [
   {
     period: 'Atual',
@@ -46,11 +48,11 @@ const cases = [
 ]
 
 const portfolioFrames = [
-  { src: '/assets/bella-have.png', alt: 'Projeto Bella Have' },
-  { src: '/assets/comollati.png', alt: 'Projeto Comollati' },
-  { src: '/assets/g4la.png', alt: 'Projeto G4LA' },
-  { src: '/assets/magventure.png', alt: 'Projeto Magventure' },
-  { src: '/assets/milltickets.png', alt: 'Projeto Milltickets' },
+  { src: `${assetBase}bella-have.png`, alt: 'Projeto Bella Have' },
+  { src: `${assetBase}comollati.png`, alt: 'Projeto Comollati' },
+  { src: `${assetBase}g4la.png`, alt: 'Projeto G4LA' },
+  { src: `${assetBase}magventure.png`, alt: 'Projeto Magventure' },
+  { src: `${assetBase}milltickets.png`, alt: 'Projeto Milltickets' },
 ]
 
 function App() {
@@ -136,7 +138,7 @@ function App() {
             <div className="mx-auto w-full max-w-6xl px-6 md:px-12">
             <div className="mb-8 flex items-center justify-between border-b border-zinc-800 pb-4">
               <h2 className="text-xs uppercase tracking-[0.2em] text-zinc-500">Projetos visuais</h2>
-              <p className="text-sm text-zinc-500">Scroll vertical movendo cards no eixo X</p>
+              <p className="text-sm text-zinc-500">Meus projetos mais recentes</p>
             </div>
 
               <div
